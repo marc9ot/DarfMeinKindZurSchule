@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  canwegotoschool.webapi:
+    image: ${DOCKER_REGISTRY-}canwegotoschool
+    build:
+      context: .
+      dockerfile: CanWeGoToSchool.WebApi/Dockerfile
