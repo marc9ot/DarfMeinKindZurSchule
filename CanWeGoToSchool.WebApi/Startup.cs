@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CanWeGoToSchool.WebApi.Queries;
+using CanWeGoToSchool.WebApi.Services;
 
 
 namespace CanWeGoToSchool.WebApi
@@ -22,6 +23,7 @@ namespace CanWeGoToSchool.WebApi
         {
             services.AddControllers();
             services.AddScoped<IRkiDataQueries, RkiDataQueries>();
+            services.AddScoped<IRkiDataService, RkiDataService>();
             services.AddSwaggerGen();
         }
 

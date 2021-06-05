@@ -11,6 +11,6 @@ namespace CanWeGoToSchool.WebApi.Queries
         public string district { get; set; }
     }
 
-    //a1 new model class 
+    //a1 new model class
 
 }
